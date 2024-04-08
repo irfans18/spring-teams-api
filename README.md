@@ -1,4 +1,3 @@
-# spring-teams-api
 Name: Trainee Enigma Monitoring System
 
 # Overview 
@@ -29,7 +28,7 @@ Berbekal kesadaran dan skill set yang diajarkan pada bootcamp di enigma camp, be
 		- [ ] role yang dibutuhkan
 		- [ ] tech yang dipake
 		- [ ] lokasi placement
-	- [ ] status placement ( ongoing | placement | menunggu SPK )
+	- [ ] status placement ( ongoing | menunggu SPK | placement )
 	- [ ] bd 
 		- [ ] name
 		- [ ] contact
@@ -53,8 +52,45 @@ Berbekal kesadaran dan skill set yang diajarkan pada bootcamp di enigma camp, be
 - [ ] Unit test
 - [ ] Docker
 
+## Entity
+All Entity extends BaseEntity
+### BaseEntity
+- id
+- created_at
+- updated_at
+- deleted_at
+## credential
+- username : string
+- password : string
+- roles : List.of(role)
+## traine 
+- name : string
+- batch : string
+- Stack : Stack
+- Tech : Tech
+## stack
+- name : enum ( Backend | Frontend | Mobile )
+- description : string
+## tech
+- name : string, Uppercase
+## supervisor
+- name : string
+- contact : string
+## company
+- name : string
+- role : string
+- location : string
+- tech : Tech
+## progress
+- trainee : Trainee
+- company : Company
+- supervisor : Supervisor
+- status : enum ( ONGOING | GOAL | GOKIL )
+- info : List.of(info)
+## info
+- url : string
+- description : string
 ## ref :
 - [Product Requirement Document](https://docs.google.com/document/d/19dzB0p3LYteBVU84wULxDAG7fMpfCFy0woUPF4cATvQ/edit?usp=sharing)
 - [Functional Specification Document](https://docs.google.com/document/d/1i39KwR_z9kwGmXzsyCQLz0t6che14dzQogzQPH2OJzo/edit?usp=sharing)
-
 
