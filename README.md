@@ -90,6 +90,8 @@ All Entity extends BaseEntity
 ## info
 - url : string
 - description : string
+## erd:
+![erd-design](db_spring_teams_api%20-%20public.png)
 ## ref :
 - [Product Requirement Document](https://docs.google.com/document/d/19dzB0p3LYteBVU84wULxDAG7fMpfCFy0woUPF4cATvQ/edit?usp=sharing)
 - [Functional Specification Document](https://docs.google.com/document/d/1i39KwR_z9kwGmXzsyCQLz0t6che14dzQogzQPH2OJzo/edit?usp=sharing)
