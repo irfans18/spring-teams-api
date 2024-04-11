@@ -19,4 +19,8 @@ public class Tech extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "trainee_id", nullable = false)
     private Trainee trainee;
+
+    @ManyToOne
+    @JoinColumn(name = "company_id", nullable = false)
+    private Company company;
 }
